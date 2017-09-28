@@ -1,5 +1,4 @@
 import React from 'react';
-import Profile from './components/Profile';
 
 export default ()=> {
   const hello = "Hello, dumbwaystolearn.com";
@@ -7,8 +6,6 @@ export default ()=> {
     <div>
       <p>{hello}</p>
       <p>{hello}</p>
-
-      <Profile/>
     </div>
   );
 }
