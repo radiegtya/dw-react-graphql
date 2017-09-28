@@ -1,27 +1,22 @@
 import React, {Component} from 'react';
+import Coffee from './components/Coffee';
+import Glass from './components/Glass';
+import Saucer from './components/Saucer';
 
 export default class App extends Component{
-
-  componentWillMount(){
-    console.log('componentWillMount');
-  }
-
-  componentDidMount(){
-    console.log('componentDidMount');
-  }
-
-  componentWillReceiveProps(){
-
-  }
-
-  componentWillUnmount(){
-
-  }
 
   render(){
     console.log('render');
     return (
-      <p>Hello dumbwaystolearn.com</p>
+      <div>
+        <Coffee
+          waterVolume={1}
+          bean="robusta"
+          type="expresso"
+        />
+        <Glass color="red"/>
+        <Saucer width={100}/>
+      </div>
     )
   }
 
