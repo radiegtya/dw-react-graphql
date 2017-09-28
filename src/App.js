@@ -1,11 +1,28 @@
-import React from 'react';
+import React, {Component} from 'react';
 
-export default ()=> {
-  const hello = "Hello, dumbwaystolearn.com";
-  return (
-    <div>
-      <p>{hello}</p>
-      <p>{hello}</p>
-    </div>
-  );
+export default class App extends Component{
+
+  componentWillMount(){
+    console.log('componentWillMount');
+  }
+
+  componentDidMount(){
+    console.log('componentDidMount');
+  }
+
+  componentWillReceiveProps(){
+
+  }
+
+  componentWillUnmount(){
+
+  }
+
+  render(){
+    console.log('render');
+    return (
+      <p>Hello dumbwaystolearn.com</p>
+    )
+  }
+
 }
